@@ -1,0 +1,84 @@
+2019-08-26 05:39:47,339 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\site-packages\sanic\server.py", line 745, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\asyncio\base_events.py", line 482, in run_until_complete
+    raise RuntimeError('Event loop stopped before Future completed.')
+RuntimeError: Event loop stopped before Future completed.
+2019-08-26 05:43:57,136 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\site-packages\sanic\server.py", line 745, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\asyncio\base_events.py", line 482, in run_until_complete
+    raise RuntimeError('Event loop stopped before Future completed.')
+RuntimeError: Event loop stopped before Future completed.
+2019-08-27 02:22:07,211 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\site-packages\sanic\server.py", line 745, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\asyncio\base_events.py", line 482, in run_until_complete
+    raise RuntimeError('Event loop stopped before Future completed.')
+RuntimeError: Event loop stopped before Future completed.
+2019-08-27 02:22:53,321 [ERROR]  Unable to start server
+Traceback (most recent call last):
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\site-packages\sanic\server.py", line 745, in serve
+    http_server = loop.run_until_complete(server_coroutine)
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\asyncio\base_events.py", line 482, in run_until_complete
+    raise RuntimeError('Event loop stopped before Future completed.')
+RuntimeError: Event loop stopped before Future completed.
+2019-08-27 02:23:36,167 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\site-packages\sanic\request.py", line 149, in load_json
+    self.parsed_json = loads(self.body)
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\site-packages\sanic\app.py", line 917, in handle_request
+    response = await response
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\site-packages\rasa\core\channels\channel.py", line 443, in receive
+    sender_id = await self._extract_sender(request)
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\site-packages\rasa\core\channels\channel.py", line 403, in _extract_sender
+    return req.json.get("sender", None)
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\site-packages\sanic\request.py", line 143, in json
+    self.load_json()
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\site-packages\sanic\request.py", line 153, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2019-08-27 02:24:25,040 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhooks/rest/webhook'
+Traceback (most recent call last):
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\site-packages\sanic\request.py", line 149, in load_json
+    self.parsed_json = loads(self.body)
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\site-packages\sanic\app.py", line 917, in handle_request
+    response = await response
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\site-packages\rasa\core\channels\channel.py", line 443, in receive
+    sender_id = await self._extract_sender(request)
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\site-packages\rasa\core\channels\channel.py", line 403, in _extract_sender
+    return req.json.get("sender", None)
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\site-packages\sanic\request.py", line 143, in json
+    self.load_json()
+  File "c:\users\archit\anaconda3\envs\rasa2\lib\site-packages\sanic\request.py", line 153, in load_json
+    raise InvalidUsage("Failed when parsing body as json")
+sanic.exceptions.InvalidUsage: Failed when parsing body as json
+2019-08-27 02:38:09,910 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
+2019-08-27 02:42:00,058 [ERROR]  Exception occurred while handling uri: unknown
+NoneType: None
